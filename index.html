@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using @vitejs/plugin-react" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>React App</title>
+  </head>
+  <script>
+    function exibeAlert(){
+      alert("Ola sou a Alice estudante do curso de IPI o EME1")
+    }
+
+  
+  </script>
+  <body>
+    <imput type="button" onclick="exibeAlert()" value="Exibir Alert" />
+    <button>Clique aqui</button>
+  </body>
+  <script src="/src/index.jsx"></script>
+</html>
+
+<p>Clique no botão para exibir a caixa de confirmação.</p>
+
+    <button onclick="funcao1()">Clique aqui</button>
+    function funcao1(){
+      var x;
+      var r=confirm("Escolha um valor!");
+      if (r==true){
+        x="você pressionou OK!";
+      }else{
+        x="Você pressionou Cancelar!";
+      }
+      document.getElementById("demo").innerHTML=x;
+    }
+
+    function myFunction(){
+      var x;
+
+      var idade=prompt("Digite sua idade:");
+
+      if (idade!=null){
+        x="Idade: " + idade + " anos.";
+        document.getElementById("demo").innerHTML=x;
+      }
+    }
